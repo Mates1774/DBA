@@ -1,0 +1,68 @@
+      body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+header, nav, article, footer {
+  display: block;
+  width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+header, footer {
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #00CC00;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px #99CC00 inset;
+  margin: 5px auto;
+}
+header{
+   font-size: 50px;
+}
+nav {
+  height: 35px;
+  text-align: center;
+}
+article {
+  min-height: 300px;
+  border: 1px solid #00CC00;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px #99CC00 inset;
+  text-align: justify;
+  }
+/* odkazy v navigačním menu */
+nav a {
+  display: inline-block;
+  width: 100px;
+  padding: 3px 12px 4px 10px;
+  margin-right: 10px;
+  background-color: #006600;
+  border: 1px outset #009900;
+  border-radius: 30px;
+  box-shadow: 0px 0px 25px 5px #99CC00;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+/* odkazy v navigačním menu při najetí myší */
+nav a:hover {
+  border-style: solid;
+  background-color: #339933;
+}
+/*obrazky*/
+img {
+margin: 5px;
+}
+.vlevo {
+float: left;
+}
+.vpravo {
+float: right;
+}
+footer a {
+text-decoration: none;
+color: white;
+}
+    
+     
