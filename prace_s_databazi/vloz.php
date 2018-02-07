@@ -15,6 +15,6 @@ if(isset($_POST['odeslat'])) {
     $psc = $_POST['psc'];
     $vloz="Insert into osoby2 (jmeno, prijmeni, mesto, ulice, cp, psc) VALUES ('".$jmeno."','".$prijmeni."','".$mesto."','".$ulice."','".$cp."','".$psc."')";
     mysqli_query($condb, $vloz);
-    mysqli_close();
+    mysqli_close($condb);
     header("Location: ./");
 }

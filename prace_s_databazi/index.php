@@ -81,5 +81,7 @@
     <a href="zobraz.php">Zobraz všechny data</a>
     <br>
     <a href="smaz.php">Smazání záznamu podle přijmení</a>
+    <br>
+    <a href="oprav.php">Oprav záznam</a>
     </body>
 </html>

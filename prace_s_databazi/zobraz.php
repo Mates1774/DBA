@@ -9,16 +9,19 @@ include_once "connect_db.php";
 ?>
 <a href="?sort=desc">Seřaď podle přijmení sestupně</a>
 <br>
-<a href="?sort=asc">Seřaď podle přijmení vzestupně</a>
+<a href="?">Seřaď podle přijmení vzestupně</a>
 <?php
+if(!$_GET){
+    $sql = "SELECT * FROM osoby2 order by prijmeni asc";
+}
 if (isset($_GET['sort'])){
     if($_GET['sort']=="desc"){
         $sql = "SELECT * FROM osoby2 order by prijmeni desc";
     }
-    elseif ($_GET['sort']=="asc"){
+   /* elseif ($_GET['sort']=="asc"){
             $sql = "SELECT * FROM osoby2 order by prijmeni asc";
         
-    }
+    }*/
 }
  $vysledek= mysqli_query($condb,$sql);
             echo "<table><tr><th>Jméno</th><th>Přijmení</th><th>Město</th><th>Ulice</th><th>Čp</th><th>PSČ</th></tr>";
